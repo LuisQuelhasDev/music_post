@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeFy</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
+        <div class="container">
+            <span><i class="bi bi-soundwave"></i></span>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span><i class="bi bi-list"></i></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link active" href="#semana">Musicas da Semana</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#explorar">Explorar</a>
+                    </li>
+                    <li class="nav-item ms-3 instagram">
+                        <a class="nav-link" href="#" title="Instagram"><i class="bi bi-instagram fs-4"></i></a>
+                    </li>
+                    <li class="nav-item ms-3 twitter">
+                        <a class="nav-link" href="#" title="Twitter"><i class="bi bi-twitter-x fs-4"></i></a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <div class="background-container container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="semana">
+            <div class="container">
+                <h2 class="pb-2 pt-2">Musicas da semana</h2>
+                <div class="row">
+                    <div class="col-md-6 col-12 pb-3">
+                        <img id="album-img" src="./imagens/505.jpg" alt="Capa do albúm" class="rounded w-100">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="list-group list-group-flush scrollable-list">
+                            <a href="#" class="list-group-item list-group-item-action active" data-album="505.jpg">
+                                Arctic Monkeys - 505
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action" data-album="ready-to-let-go.jpg" >
+                                Cage the Elephant - Ready to Let Go
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action" data-album="end-of.jpg">
+                                Djo - End of Beginning
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action" data-album="messy.jpg">
+                                Lola Young - Messy
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action" data-album="trouble.jpg">
+                                Coldplay - Trouble
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action" data-album="numb.jpg">
+                                Linkin Park - Numb
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action" data-album="vento.jpg">
+                                Terno Rei - Vento na Cara
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action" data-album="tell-me.jpg">
+                                Cage the Elephant - Sweetie Little Jean
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action" data-album="portugal.jpg">
+                                Portugal. The Man - Feel It Still
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="explorar">
+            <div class="container">
+                <h2>Explorar</h2>
+                <div class="row">
+                    <h3>Experimente esses álbuns</h3>
+                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./imagens/myhem2.jpg" alt="Mayhem" class="w-100">
+                                <div class="carousel-caption ">
+                                    <h4>Lady Gaga</h4>
+                                    <h5>Mayhem</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./imagens/getaway.webp" alt="Getaway" class="w-100">
+                                <div class="carousel-caption">
+                                    <h4>Red Hot Chili Peppers</h4>
+                                    <h5>The Getaway</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./imagens/abbey-road.webp" alt="Mayhem" class="w-100">
+                                <div class="carousel-caption">
+                                    <h4>The Beatles</h4>
+                                    <h5>Abbey Road</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <h2 class="pt-4">Playlists</h2>
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#indie">Indie</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" data-bs-toggle="tab" href="#rock">Rock</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" data-bs-toggle="tab" href="#mpb">MPB</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" data-bs-toggle="tab" href="#pop">Pop</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div id="indie" class="tab-pane fade show active">
+                            <div class="row">
+                                <div class="col-md-4 pb-3">
+                                    <div class="card border-0">
+                                        <img src="./imagens/AM.jpg" alt="Album">
+                                        <div class="card-img-overlay">
+                                            <h6 class="card-title">Arctic Monkeys</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pb-3">
+                                    <div class="card border-0">
+                                        <img src="./imagens/on-a-roll.jpg" alt="Album">
+                                        <div class="card-img-overlay">
+                                            <h6 class="card-title">Balthazar</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pb-3">
+                                    <div class="card border-0">
+                                        <img src="./imagens/foals.jpg" alt="Album">
+                                        <div class="card-img-overlay">
+                                            <h6 class="card-title">Foals</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rock" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-md-4 pb-3">
+                                    <div class="card border-0">
+                                        <img src="./imagens/queen.jpg" alt="Album">
+                                        <div class="card-img-overlay">
+                                            <h6 class="card-title">Queen</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pb-3">
+                                    <div class="card border-0">
+                                        <img src="./imagens/rumors.jpg" alt="Album">
+                                        <div class="card-img-overlay">
+                                            <h6 class="card-title">Fleetwood Mac</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pb-3">
+                                    <div class="card border-0">
+                                        <img src="./imagens/guns.jpg" alt="Album">
+                                        <div class="card-img-overlay">
+                                            <h6 class="card-title">Guns N' Roses</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mpb" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-md-4 pb-3">
+                                    <div class="card border-0">
+                                        <img src="./imagens/tribalistas.jpg" alt="Album">
+                                        <div class="card-img-overlay">
+                                            <h6 class="card-title">Tribalistas</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pb-3">
+                                    <div class="card border-0">
+                                        <img src="./imagens/raul.jpg" alt="Album">
+                                        <div class="card-img-overlay">
+                                            <h6 class="card-title">Raul Seixas</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pb-3">
+                                    <div class="card border-0">
+                                        <img src="./imagens/cassia.jpg" alt="Album">
+                                        <div class="card-img-overlay">
+                                            <h6 class="card-title">Cássia Eller</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pop" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-md-4 pb-3">
+                                    <div class="card border-0">
+                                        <img src="./imagens/miley.jpg" alt="Album">
+                                        <div class="card-img-overlay">
+                                            <h6 class="card-title">Miley Cyrus</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pb-3">
+                                    <div class="card border-0">
+                                        <img src="./imagens/adele.jpg" alt="Album">
+                                        <div class="card-img-overlay">
+                                            <h6 class="card-title">Adele</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pb-3">
+                                    <div class="card border-0">
+                                        <img src="./imagens/bruno.jpg" alt="Album">
+                                        <div class="card-img-overlay">
+                                            <h6 class="card-title">Bruno Mars</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

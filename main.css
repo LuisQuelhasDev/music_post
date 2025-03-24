@@ -1,0 +1,164 @@
+header{
+    background-color: black;
+    font-family: "Big shoulders inline", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+span i{
+    color:  #780606;
+    font-size: 44px;
+}
+
+.nav .nav-link.active{
+    background-color:  #780606;
+    color: #fff;
+}
+
+.nav .nav-link{
+    color: #fff;
+}
+
+.nav .nav-link:hover{
+    background-color: #780606;
+}
+
+.instagram:hover{
+    transform: scale(1.2);
+}
+
+.twitter:hover{
+    transform: scale(1.2);
+}
+
+li a i{
+    color:  #780606;
+}
+
+body{
+    background-image: url(./imagens/505.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.background-container{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    max-width: 720px;
+    background-color: rgba(0, 0, 0, 0.70);
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+h2{
+    font-family: "Big shoulders inline", sans-serif;
+    font-size: 36px;
+    color: #fff;
+}
+
+#semana{
+    padding-bottom: 60px;
+}
+
+h3{
+    font-family: "Big shoulders inline", sans-serif;
+    color: #fff;
+}
+
+.scrollable-list{
+    max-height: 326px;
+    overflow-y: auto;
+    border-radius: 6px;
+}
+
+.scrollable-list::-webkit-scrollbar{
+    width: 6px;
+}
+
+.scrollable-list::-webkit-scrollbar-track{
+    background: black
+}
+
+.scrollable-list::-webkit-scrollbar-thumb{
+    background: #780606;
+    border-radius: 10px;
+} 
+
+.list-group .list-group-item.active{
+    background-color:  #780606;
+    color: #fff;
+    border: none;
+}
+
+.list-group .list-group-item{
+    background-color: black;
+    color: #fff;
+    border-color: #780606;
+}
+
+.list-group{
+    border-radius: 10px 0 0 10px;
+}
+
+.list-group .list-group-item:hover {
+    background-color: #780606;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    height: 400px;
+}
+
+.carousel-caption{
+    top: 0;
+    left: 10px;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+}
+
+.card-header{
+    font-family: "Big shoulders inline", sans-serif;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-header-tabs .nav-link{
+    border: none;
+}
+
+.card-body{
+    background-color: black;
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+}
+
+.tab-content .card img{
+    border: none;
+}
+
+.card-title{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #780606;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width:768px){
+    #semana{
+        padding-bottom: 10px
+    }
+
+    .carousel-item img{
+        object-fit: cover;
+        height: 260px;
+    }
+
+    #explorar{
+        padding-top: 30px;
+    }
+}
